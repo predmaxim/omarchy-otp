@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "predmaxim.otp",
+  "name": "UTM OTP",
+  "version": "1.0.0",
+  "author": "predmaxim",
+  "description": "Click copies the otp/utm TOTP code from pass to the clipboard",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Otp.qml"
+  },
+  "barWidget": {
+    "displayName": "UTM OTP",
+    "description": "Click copies the otp/utm TOTP code to the clipboard",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
