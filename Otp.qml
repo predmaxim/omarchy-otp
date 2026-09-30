@@ -14,9 +14,8 @@ BarWidget {
     bar: root.bar
     text: "\uf084"
     tooltipText: "Copy UTM OTP code"
-    // pass -c copies without printing the code and clears the clipboard after 45s.
     onPressed: function() {
-      if (root.bar) root.bar.run("pass otp -c otp/utm >/dev/null || notify-send -u critical 'UTM OTP' 'pass otp otp/utm failed'")
+      if (root.bar) root.bar.run(Qt.resolvedUrl("copy.sh").toString().replace(/^file:\/\//, ""))
     }
   }
 }
